@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,12 +43,6 @@
             flex-grow: 1;
         }
 
-        .header .info h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #333;
-        }
-
         .header .info p {
             margin: 4px 0;
             color: #666;
@@ -57,8 +52,8 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
+            border-top: 2px solid #ddd;
+            border-bottom: 2px solid #ddd;
             padding: 10px 0;
             margin-bottom: 20px;
         }
@@ -82,6 +77,8 @@
 
         .skills {
             margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
         }
 
         .skills h2 {
@@ -107,38 +104,84 @@
 
         a {
             text-decoration: none;
-            color: #0073e6;
+        }
+
+        .work-experience h2 {
+            margin-top: 20px;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .work-experience h3 {
+            font-size: 1.2em;
+            margin: 0;
+            color: #333;
+        }
+
+        .company-name {
+            font-weight: bold;
+            color: #777;
+        }
+
+        .work-duration {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        .achievements {
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        .achievements span {
+            font-weight: 900;
+            color: #333;
+        }
+
+        .technologies {
+            font-weight: 900;
+            color: #bebec2;
         }
     </style>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <img src="./profile.png" alt="Profile Picture">
             <div class="info">
-                <h1>Piyush Jiwane</h1>
-                <p>Software Engineer</p>
-                <p style="font-size: 14px;">Dynamic and detail-oriented software engineer specializing in the MERN stack. Proven track record of delivering scalable and user-centric web applications for diverse industries. Expert in building seamless systems.</p>
+                <p style="font-size: 30px; color: black;">Piyush Jiwane</p>
+                <p style="font-size: 20px; ">Software Engineer</p>
+                <p style="font-size: 16px; color: black; margin-top: 15px;">Dynamic and detail-oriented software
+                    engineer specializing in the MERN stack. Proven track record of delivering scalable and user-centric
+                    web applications for diverse industries. Expert in building seamless systems.</p>
             </div>
         </div>
 
         <div class="contact">
-            <div class="group">
-                <div><i class="fas fa-envelope"></i> jiwanepiyush@gmail.com</div>
-                <div><i class="fas fa-phone"></i> 9403301892</div>
-                <div><i class="fas fa-map-marker-alt"></i> Warora, Maharashtra</div>
+            <div style="margin-left: 80px;">
             </div>
             <div class="group">
+                <div><i class="fas fa-envelope"></i> jiwanepiyush@gmail.com</div>
                 <div><i class="fas fa-birthday-cake"></i> 18 March, 1996</div>
-                <div><i class="fab fa-linkedin"></i> <a style="color: black;" href="https://linkedin.com/in/piyush-jiwane-6ab673126" target="_blank">linkedin.com/in/piyush-jiwane</a></div>
-                <div><i class="fab fa-github"></i> <a style="color: black;" href="https://github.com/PiyushJiwane" target="_blank">github.com/PiyushJiwane</a></div>
+                <div><i class="fab fa-linkedin"></i> <a style="color: black;"
+                        href="https://linkedin.com/in/piyush-jiwane-6ab673126"
+                        target="_blank">linkedin.com/in/piyush-jiwane</a></div>
+            </div>
+            <div class="group">
+                <div><i class="fas fa-phone"></i> 9403301892</div>
+                <div><i class="fas fa-map-marker-alt"></i> Warora, Maharashtra</div>
+                <div><i class="fab fa-github"></i> <a style="color: black;" href="https://github.com/PiyushJiwane"
+                        target="_blank">github.com/PiyushJiwane</a></div>
             </div>
         </div>
 
         <div class="skills">
-            <h2>Skills</h2>
+            <h2>SKILLS</h2>
             <div class="tags">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -162,6 +205,49 @@
                 <span>DynamoDB</span>
             </div>
         </div>
+        <div class="work-experience">
+            <h2>WORK EXPERIENCE</h2>
+            <h3 style="color: #555;">Senoir Apprentice Engineer</h3>
+            <div class="company-name">Bridgelabz Solutions, Mumbai</div>
+            <div class="work-duration">05/2021 - 12/2023</div>
+            <div class="achievements">
+                <p><span>CRM Project</span> : Designed and implemented a data pipeline to gather, sanitize, transform,
+                    and store data from multiple Excel sheets into a database. Utilized <span
+                        class="technologies">Python, Pandas, SQLAlchemy, FastAPI, S3,</span> and <span
+                        class="technologies">EC2</span> for seamless data processing and storage.</p>
+            </div>
+            <div class="achievements" style="border-bottom:1px solid #ddd ;">
+                <p><span>Book Store</span> : Developed the backend for an eLibrary platform aimed at providing eBooks
+                    for students. Designed and implemented scalable APIs and database solutions. Utilized <span
+                        class="technologies">Node JS, EC2</span> and <span class="technologies">DynamoDB</span> for
+                    seamless data processing and storage.</p>
+            </div>
+            <h3 style="color: #555; margin-top: 10px;">Software Engineer</h3>
+            <div class="company-name">Impelsys India, Bengaluru</div>
+            <div class="work-duration">05/2021 - 12/2023</div>
+            <div class="achievements" style="border-bottom:2px solid #ddd ;">
+                <p><span>Ipublish central Scholar</span> : Designed secure REST APIs with user authorization, integrated
+                    Stripe for multi-currency payments, and built scalable solutions using Node.js. Conducted QA testing
+                    to enhance software quality and user experience. <span class="technologies">Node JS</span></p>
+            </div>
+        </div>
+        <div class="work-experience">
+            <h2>PERSONAL PROJECT</h2>
+            <div class="work-duration">06/2024 - <i>Present</i></div>
+            <div class="achievements" style="border-bottom:2px solid #ddd ;">
+                <p><span>Automated Trading System</span> : Developed a custom system for stock trading using Kotak Neo's
+                    RESTful APIs to monitor, analyze, and place orders in the Indian stock market. Designed logic to
+                    trigger buy/sell orders based on real-time price analysis and predefined conditions. Utilized <span
+                        class="technologies">Node JS, React JS</span> and <span class="technologies">Pandas</span></p>
+            </div>
+        </div>
+        <div class="work-experience">
+            <h2>EDUCATION</h2>
+            <h3 style="color: #555;">Bachelor of Engineering in Computer Technology</h3>
+            <div class="company-name">Kavikulguru Institute of Technology and Science (KITS), Ramtek</div>
+            <div class="work-duration">2014-2018</div>
+        </div>
     </div>
 </body>
+
 </html>
