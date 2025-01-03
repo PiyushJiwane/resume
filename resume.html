@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume UI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-right: 20px;
+        }
+
+        .header .info {
+            flex-grow: 1;
+        }
+
+        .header .info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .header .info p {
+            margin: 4px 0;
+            color: #666;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .contact .group {
+            display: flex;
+            flex: 1 1 calc(33.33% - 20px);
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact .group div {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact .group div i {
+            margin-right: 5px;
+            color: #807e7e;
+        }
+
+        .skills {
+            margin-bottom: 20px;
+        }
+
+        .skills h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .skills .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills .tags span {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+    </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./profile.png" alt="Profile Picture">
+            <div class="info">
+                <h1>Piyush Jiwane</h1>
+                <p>Software Engineer</p>
+                <p style="font-size: 14px;">Dynamic and detail-oriented software engineer specializing in the MERN stack. Proven track record of delivering scalable and user-centric web applications for diverse industries. Expert in building seamless systems.</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="group">
+                <div><i class="fas fa-envelope"></i> jiwanepiyush@gmail.com</div>
+                <div><i class="fas fa-phone"></i> 9403301892</div>
+                <div><i class="fas fa-map-marker-alt"></i> Warora, Maharashtra</div>
+            </div>
+            <div class="group">
+                <div><i class="fas fa-birthday-cake"></i> 18 March, 1996</div>
+                <div><i class="fab fa-linkedin"></i> <a style="color: black;" href="https://linkedin.com/in/piyush-jiwane-6ab673126" target="_blank">linkedin.com/in/piyush-jiwane</a></div>
+                <div><i class="fab fa-github"></i> <a style="color: black;" href="https://github.com/PiyushJiwane" target="_blank">github.com/PiyushJiwane</a></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>ReactJS</span>
+                <span>MaterialUI</span>
+                <span>NodeJS</span>
+                <span>ExpressJS</span>
+                <span>MongoDB</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Redux</span>
+                <span>Pandas</span>
+                <span>FastAPI</span>
+                <span>MySQL</span>
+                <span>S3</span>
+                <span>EC2</span>
+                <span>AWS Lambda</span>
+                <span>DynamoDB</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
