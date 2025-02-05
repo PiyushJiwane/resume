@@ -16,10 +16,10 @@
         }
 
         .container {
-            width: 80%;
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
+            /* width: 80%;
+            max-width: 900px; */
+            /* margin: 20px auto; */
+            padding: 30px 110px 30px 110px;
             background-color: #fff;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -164,14 +164,14 @@
             <div style="margin-left: 150px;">
             </div>
             <div class="group">
-                <div><i class="fas fa-envelope"></i> piyushjiwane96@gmail.com</div>
+                <div><i class="fas fa-envelope"></i> jiwanepiyush@gmail.com</div>
                 <div><i class="fas fa-birthday-cake"></i> 18 March, 1996</div>
                 <div><i class="fab fa-linkedin"></i> <a style="color: black;"
                         href="https://linkedin.com/in/piyush-jiwane-6ab673126"
                         target="_blank">linkedin.com/in/piyush-jiwane</a></div>
             </div>
             <div class="group">
-                <div><i class="fas fa-phone"></i>9359221738</div>
+                <div><i class="fas fa-phone"></i>9403301892</div>
                 <div><i class="fas fa-map-marker-alt"></i> Warora, Maharashtra</div>
                 <div><i class="fab fa-github"></i> <a style="color: black;" href="https://github.com/PiyushJiwane"
                         target="_blank">github.com/PiyushJiwane</a></div>
@@ -204,36 +204,94 @@
             </div>
         </div>
         <div class="work-experience">
-            <h2>PERSONAL PROJECT</h2>
-            <div class="work-duration">Jan 2024 - <i>Present</i></div>
-            <div class="achievements" style="border-bottom:2px solid #ddd ;">
-                <p><span>Automated Trading System</span> : Developed a custom system for stock trading using Kotak Neo's
-                    RESTful APIs to monitor, analyse, and place orders in the Indian stock market. Designed logic to
-                    trigger buy/sell orders based on real-time price analysis and predefined conditions. Utilized <span
-                        class="technologies">Node.js, React.js,</span> and <span class="technologies">Pandas</span></p>
-            </div>
-        </div>
-        <div class="work-experience">
             <h2>WORK EXPERIENCE</h2>
             <h3 style="color: #555;">Senior Apprentice Engineer</h3>
             <div class="company-name">Bridgelabz Solutions, Mumbai</div>
             <div class="work-duration">May 2021 - Dec 2023</div>
             <div class="achievements">
-                <p><span>CRM Project</span> : Designed and implemented a data pipeline to gather, sanitize, transform,
+                <!-- <p><span>CRM Project</span> : Designed and implemented a data pipeline to gather, sanitize, transform,
                     and store data from multiple Excel sheets into a database. Utilized <span
                         class="technologies">Python, Pandas, SQLAlchemy, FastAPI, S3,</span> and <span
-                        class="technologies">EC2</span> for seamless data processing and storage.</p>
+                        class="technologies">EC2</span> for seamless data processing and storage.</p> -->
+                <p>
+                    <span>CRM Project – Data Processing Automation</span>
+                    
+                        <ul>
+                            <li>Designed and implemented a data pipeline to process and sanitize candidate information from multiple Excel sources.</li>
+                            <li>Utilized Python (Pandas) to clean, deduplicate, and structure data, ensuring unique candidate records based on email and mobile number.</li>
+                            <li>Automated data validation, highlighting incomplete records and removing those with insufficient information (missing academic details, contact info, etc.)</li>
+                            <li>Standardized column names and transformed data to match AWS RDS database schema using SQLAlchemy.</li>
+                            <li>Developed a seamless data ingestion system that migrated processed records from Excel sheets to AWS RDS for permanent storage.</li>
+                            <li>Enhanced data integrity and accessibility, enabling coordinators to make informed decisions for candidate screening.</li>
+                            <li>Enabled recruitment coordinators to make data-driven screening decisions, improving selection accuracy by 30%.</li>
+                        </ul>
+                </p>
             </div>
             <div class="achievements" style="border-bottom:1px solid #ddd ;">
-                <p><span>Book Store</span> : Developed the backend for an eLibrary platform aimed at providing eBooks
+                <!-- <p><span>Book Store</span> : Developed the backend for an eLibrary platform aimed at providing eBooks
                     for students. Designed and implemented scalable APIs and database solutions. Utilized <span
-                        class="technologies">Node.js, EC2,</span> and <span class="technologies">DynamoDB</span> for seamless data processing and storage.</p>
+                        class="technologies">Node.js, EC2,</span> and <span class="technologies">DynamoDB</span> for seamless data processing and storage.</p> -->
+                        <p>
+                            <span>Book Store & BridgeCoin Portal Integration</span>
+                        <ul>
+                            <li>Designed and developed the Book Store backend using Node.js and integrated it with the existing BridgeCoin (virtual currency) portal.</li>
+                            <li>Built secure APIs for mentors to upload learning materials, videos, and exercises, enabling structured training.</li>
+                            <li>Developed functionalities for candidates to access learning content, submit exercises, and track progress.</li>
+                            <li>Implemented AWS DynamoDB for scalable data storage, ensuring efficient retrieval and seamless user experience.</li>
+                            <li>Enabled a unified candidate profile, allowing candidates to manage their training, rewards, and progress in a single portal.</li>
+                            <li>Provided admin insights for monitoring candidate performance, improving training efficiency and placement outcomes.</li>
+                        </ul>    
+                        </p>
+            </div>
+            <div class="achievements" style="border-bottom:1px solid #ddd ;">
+                <!-- <p><span>Book Store</span> : Developed the backend for an eLibrary platform aimed at providing eBooks
+                    for students. Designed and implemented scalable APIs and database solutions. Utilized <span
+                        class="technologies">Node.js, EC2,</span> and <span class="technologies">DynamoDB</span> for seamless data processing and storage.</p> -->
+                        <p>
+                            <span>SocialBridge – Bridging candidates and social media engagement (POC)</span>
+                        <ul>
+                            <li>Deployed an ML-based verification model on AWS Lambda and API Gateway, enabling real-time candidate validation for social media engagement.</li>
+                            <li>Integrated AWS S3 event triggers to automate image processing, ensuring seamless detection of candidate interactions with company pages.</li>
+                            <li>Designed a reward system where candidates earn BridgeCoins based on verified social media activity, enhancing participation.</li>
+                            <li>Optimized the Lambda function execution, reducing processing time and improving accuracy in detecting candidate engagement.</li>
+                            <li>Boosted performance marketing efforts, increasing LinkedIn & Instagram engagement by 40% and strengthening the company’s brand presence.</li>
+                        </ul>    
+                        </p>
             </div>
             <h3 style="color: #555; margin-top: 10px;">Software Engineer</h3>
             <div class="company-name">Impelsys India, Bengaluru</div>
             <div class="work-duration">Sep 2019 - Feb 2021</div>
             <div class="achievements" style="border-bottom:2px solid #ddd ;">
-                    <p><span>iPublish Central Scholar</span> : Designed secure REST APIs with user authorization, integrated Stripe for multi-currency payments, and built scalable <span class="technologies">Node.js</span> solutions. Conducted QA testing to enhance quality, performance, and user experience.</p>
+                    <!-- <p><span>iPublish Central Scholar</span> : Designed secure REST APIs with user authorization, integrated Stripe for multi-currency payments, and built scalable <span class="technologies">Node.js</span> solutions. Conducted QA testing to enhance quality, performance, and user experience.</p> -->
+                    <p><span>iPublish Central Scholar</span>
+                    <ul>
+                        <li>Design and developed Rest APi’s Implemented User Authorization to protect sensitive customer data and ensure compliance with privacy regulations.</li>
+                        <li>Building stable and maintainable codebases using Node JS with clear knowledge of Node JS Library.</li>
+                        <li>Requirement analysis, Design, development, management & ensure quality of the deliverable for self & the team.</li>
+                        <li>Payment Gateway Integration : Integrated Stripe Payment Gateway to purchase the multiple Product with multi currency support.</li>
+                        <li>Conducted both development and QA testing to ensure software quality and reliability, iterating on feedback to improve user experience.</li>
+                    </ul>
+                    </p>
+            </div>
+        </div>
+        <div class="work-experience">
+            <h2>PERSONAL PROJECT</h2>
+            <div class="work-duration">Jan 2024 - <i>Present</i></div>
+            <div class="achievements" style="border-bottom:2px solid #ddd ;">
+                <!-- <p><span>Automated Trading System</span> : Developed a custom system for stock trading using Kotak Neo's
+                    RESTful APIs to monitor, analyse, and place orders in the Indian stock market. Designed logic to
+                    trigger buy/sell orders based on real-time price analysis and predefined conditions. Utilized <span
+                        class="technologies">Node.js, React.js,</span> and <span class="technologies">Pandas</span></p> -->
+                <p><span>TradeBot - Automated Stock Trading System</span>
+                <ul>
+                    <li>Developed a fully automated stock trading system using Kotak Neo's RESTful APIs, eliminating the need for manual market tracking.</li>
+                    <li>Automated order execution by comparing real-time prices with precomputed buy/sell triggers from a CSV-based strategy model.</li>
+                    <li>Built the backend using Python SDK & Pandas for data processing and trade automation, ensuring high-precision order execution.</li>
+                    <li>Integrated Node.js SDK & React.js to visualize live trading data, enhancing user experience and real-time decision-making.</li>
+                    <li>Improved trading efficiency by automatically capturing sudden market movements, reducing manual execution time, and optimizing trade accuracy.</li>
+                </ul>
+            URL : <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- https://github.com/PiyushJiwane/Kotak-Neo-AlgoTrading <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- https://github.com/PiyushJiwane/mf_fr_optns
+            </p>
             </div>
         </div>
         <div class="work-experience">
